@@ -1,0 +1,168 @@
+/* Global dark theme for the Nuxt app UI (not the resume PDF templates). */
+
+:root {
+  /* Spotify-like palette */
+  --app-bg: #000000;
+  --app-surface: #121212;
+  --app-surface-2: #181818;
+  --app-surface-3: #242424;
+  --app-border: rgba(255, 255, 255, 0.08);
+  --app-text: #ffffff;
+  --app-text-2: rgba(255, 255, 255, 0.72);
+  --app-muted: rgba(255, 255, 255, 0.55);
+  --app-primary: #1db954; /* Spotify green */
+  --app-primary-2: rgba(29, 185, 84, 0.22);
+}
+
+html,
+body {
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+/* Keep the actual resume page white for PDF/print accuracy */
+.resume-theme,
+.resume-theme * {
+  color: inherit;
+}
+
+/* Element UI surfaces */
+.dashboard-root {
+  background: var(--app-bg);
+}
+
+.dashboard-header {
+  background: var(--app-surface) !important;
+  border-bottom: 1px solid var(--app-border) !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.35) !important;
+}
+
+.brand {
+  color: var(--app-text) !important;
+}
+
+.header-user,
+.sidebar-toggle {
+  color: var(--app-text-2) !important;
+}
+
+.header-user:hover,
+.sidebar-toggle:hover {
+  color: var(--app-primary) !important;
+}
+
+.dashboard-main {
+  background: var(--app-bg) !important;
+}
+
+/* Cards */
+.dashboard-root .el-card {
+  background: var(--app-surface-2);
+  border: 1px solid var(--app-border);
+  color: var(--app-text);
+}
+
+.dashboard-root .el-card__header {
+  border-bottom: 1px solid var(--app-border);
+}
+
+/* Typography helpers used in pages */
+.dashboard-root .text-muted {
+  color: var(--app-muted) !important;
+}
+
+/* Inputs */
+.dashboard-root .el-input__inner,
+.dashboard-root .el-textarea__inner {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--app-border);
+  color: var(--app-text);
+}
+
+.dashboard-root .el-input__inner::placeholder,
+.dashboard-root .el-textarea__inner::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.dashboard-root .el-input__inner:focus,
+.dashboard-root .el-textarea__inner:focus {
+  border-color: rgba(29, 185, 84, 0.75);
+  box-shadow: 0 0 0 2px var(--app-primary-2);
+}
+
+/* Form labels */
+.dashboard-root .el-form-item__label {
+  color: var(--app-text-2);
+}
+
+/* Alerts */
+.dashboard-root .el-alert {
+  border: 1px solid var(--app-border);
+}
+
+/* Dropdown menu */
+.el-dropdown-menu {
+  background: var(--app-surface) !important;
+  border: 1px solid var(--app-border) !important;
+}
+
+.el-dropdown-menu__item {
+  color: var(--app-text-2) !important;
+}
+
+.el-dropdown-menu__item:hover {
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: var(--app-text) !important;
+}
+
+/* Radio buttons in preview panel */
+.dashboard-root .el-radio-button__inner {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: var(--app-border);
+  color: var(--app-text-2);
+}
+
+.dashboard-root .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  background: rgba(29, 185, 84, 0.18);
+  border-color: rgba(29, 185, 84, 0.65);
+  color: var(--app-text);
+}
+
+/* Preview container background */
+.dashboard-root .preview-scroll {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: var(--app-border) !important;
+}
+
+/* Buttons (primary) */
+.dashboard-root .el-button--primary {
+  background: var(--app-primary);
+  border-color: var(--app-primary);
+  color: #000;
+  font-weight: 600;
+}
+
+.dashboard-root .el-button--primary:hover,
+.dashboard-root .el-button--primary:focus {
+  background: #1ed760;
+  border-color: #1ed760;
+  color: #000;
+}
+
+.dashboard-root .el-button--primary.is-plain {
+  background: transparent;
+  color: var(--app-primary);
+  border-color: rgba(29, 185, 84, 0.55);
+}
+
+.dashboard-root .el-button--primary.is-plain:hover,
+.dashboard-root .el-button--primary.is-plain:focus {
+  background: rgba(29, 185, 84, 0.12);
+  border-color: rgba(29, 185, 84, 0.8);
+}
+
+/* Menu hover + active row feel (Spotify-ish) */
+.dashboard-root .el-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
