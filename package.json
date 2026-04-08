@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt generate",
+    "build": "nuxt generate && exit 0",
     "start": "node ./server.js",
     "generate": "nuxt generate",
     "build:static": "nuxt generate"
