@@ -2,10 +2,14 @@
   "name": "resume-builder-app",
   "version": "1.0.0",
   "private": true,
+  "main": "server.js",
+  "engines": {
+    "node": ">=20 <22"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate",
-    "start": "node server.js",
+    "start": "node ./server.js",
     "generate": "nuxt generate",
     "build:static": "nuxt generate"
   },
