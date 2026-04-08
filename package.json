@@ -2,20 +2,16 @@
   "name": "resume-builder-app",
   "version": "1.0.0",
   "private": true,
-  "main": "server.js",
   "engines": {
     "node": ">=20 <22"
   },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt generate && exit 0",
-    "start": "node ./server.js",
-    "generate": "nuxt generate",
-    "build:static": "nuxt generate"
+    "build": "nuxt generate",
+    "start": "echo 'static ready'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
-    "boostrap": "^2.0.0",
     "bootstrap": "^5.3.8",
     "core-js": "^3.25.3",
     "element-ui": "^2.15.10",
