@@ -2,8 +2,8 @@
   "name": "resume-builder-app",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": ">=20 <22"
+"engines": {
+    "node": ">=18"
   },
   "scripts": {
     "dev": "nuxt",

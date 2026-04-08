@@ -59,5 +59,10 @@ export default {
     babel: {
       compact: false
     }
+  },
+
+  target: 'static',
+  generate: {
+    fallback: '200.html'
   }
 }

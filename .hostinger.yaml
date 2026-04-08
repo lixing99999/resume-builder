@@ -1,0 +1,5 @@
+
+language: node
+node_version: "18"
+build_command: npm install && npm run build
+publish_directory: dist
